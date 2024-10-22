@@ -1,0 +1,160 @@
+.nav {
+  position: sticky;
+  top: .1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(241, 235, 235);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav1 {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.head {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: .4rem;
+}
+
+.user {
+  display: flex;
+}
+
+.menu {
+  margin-top: .6rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  display: none;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-top: 2px;
+  border-radius: 8vh;
+}
+
+.pages {
+  display: flex;
+}
+
+.page {
+  display: flex;
+  color: black;
+  margin-right: 2vw;
+  padding: .8rem;
+  border-radius: .5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-top: .5rem;
+  margin-bottom: 2.8rem;
+  text-align: center;
+  color: #333;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.phone-number {
+  color: #000;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.footer{
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(29, 31, 68);
+  color: white;
+}
+
+.footer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: rgba(10, 0.5, 10, 0.50) 0px 0px 8px;
+  font-size: .8rem;
+  padding: 2rem;
+  font-weight: 100;
+}
+.footer2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-shadow: white 1px 1px 5px;
+  padding: .6rem;
+  font-size: .8rem;
+  font-family: 'Roboto', sans-serif;
+}
+h4{
+  color: rgb(145, 136, 136);
+  font-weight: 100;    
+}
+.aa{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav1 {
+    display: block;
+  }
+
+  .pages {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .nav1 {
+    display: block;
+  }
+
+  .pages {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}

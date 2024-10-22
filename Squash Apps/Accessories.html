@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Accesspries.css">
+    <title>Accessories</title>
+    <link rel="icon" type="image" href="./Imagess/applilogo.jpeg">
+</head>
+
+<body>
+    <div class="body">
+        <header class="nav">
+            <div class="user">
+                <img class="logo" src="./Imagess/applilogo.jpeg">
+                <div class="head">APPLE STORE</div>
+            </div>
+            <div>
+                <img onclick="Openmenu()" class="menu" src="./Imagess/menu.png">
+            </div>
+            <div class="pages">
+                <a class="page" href="./task1.html">Mobile</a>
+                <a class="page" href="./Accessories.html">Accessories</a>
+                <a class="page" href="./Contact.html">Contact Us</a>
+                <a class="page" href="./Signin.html">Sing-In</a>
+            </div>
+        </header>
+        <div class="nav1" id="nav1">
+            <a class="page" href="./task1.html">Mobile</a>
+            <a class="page" href="./Accessories.html">Accessories</a>
+            <a class="page" href="./Contact.html">Contact Us</a>
+            <a class="page" href="./Signin.html">Sing-In</a>
+        </div>
+        <h1 class="h1">Accessories</h1>
+        <div class="cards">
+            <div class="card1">
+                <h1>Smart Watch</h1>
+                <img class="image" src="./Imagess/smartwatch.webp">
+                <!-- <div>
+                <p>24,999</p>
+                <p>29,999</p>
+            </div> -->
+                <a class="a" href="./details.html">Buy Now</a>
+            </div>
+            <div class="card2">
+                <h1>Air Pods</h1>
+                <img class="image" src="./Imagess/airpods.webp">
+                <a class="a" href="./details.html">Buy Now</a>
+            </div>
+            <div class="card3">
+                <h1>Head Phone</h1>
+                <img class="image" src="./Imagess/headphone.webp">
+                <a class="a" href="./details.html">Buy Now</a>
+            </div>
+            <div class="card1">
+                <h1>Charger</h1>
+                <img class="image" src="./Imagess/charger.webp">
+                <a class="a" href="./details.html">Buy Now</a>
+            </div>
+            <div class="card2">
+                <h1>Power Bank</h1>
+                <img class="image" src="./Imagess/powerbank.webp">
+                <a class="a" href="./details.html">Buy Now</a>
+            </div>
+            <div class="card3">
+                <h1>Wired Headset</h1>
+                <img class="image" src="./Imagess/wired.webp">
+                <a class="a" href="./details.html">Buy Now</a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer1">
+                <article class="about">
+                    <h4>About</h4>
+                    <p>Contact Us</p>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Corporate Information</p>
+                </article>
+                <hr>
+                <div class="help">
+                    <h4>Help</h4>
+                    <p>Payments</p>
+                    <p>Shipping</p>
+                    <p>Cancellation</p>
+                    <p>Report Infringement</p>
+                </div>
+                <hr>
+                <div class="policy">
+                    <h4>Policy</h4>
+                    <p>Terms Of Use</p>
+                    <p>Security</p>
+                    <p>Privacy</p>
+                    <p>Sitemap</p>
+                </div>
+                <hr>
+                <div class="address">
+                    <h4>Regd Address</h4>
+                    <p>1 Apple Park Way,</p>
+                    <p>Cupertino, </p>
+                    <p>California,</p>
+                    <p>United States.</p>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="aa">
+                    <img src="./Imagess/ad.svg">Advertise
+                </div>
+                <div class="aa">
+                    <img src="./Imagess/help.svg">Help Center
+                </div>
+                <div class="aa">
+                    <img src="./Imagess/gift.svg">Gift Cards
+                </div>
+                <div>
+                    <p>&copy; 2024 Apple Store. All rights reserved.</p>
+                </div>
+                <div class="az">
+                    <img src="./Imagess/f1.svg">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function Openmenu() {
+
+            menu = document.getElementById("nav1");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            }
+            else {
+                menu.style.display = "block";
+            }
+        }
+
+        function handle() {
+            alert("Thank You For Buying")
+        }
+    </script>
+</body>
+
+</html>

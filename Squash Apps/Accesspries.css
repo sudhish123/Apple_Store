@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    background-color: white;    
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    position: sticky;
+    top: .1rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(241, 235, 235);    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.nav1{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.head{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: .4rem;
+}
+.user{
+    display: flex;
+}
+.menu{
+    margin-top: .6rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    display: none;
+}
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-top: 2px;
+    border-radius: 8vh;
+}
+
+.pages{
+    display: flex;
+}
+.page{
+    display: flex;
+    color: black;
+    margin-right: 2vw;
+    padding: .8rem;
+    border-radius: .5rem;
+    text-decoration: none;    
+    font-size: 1rem;
+}a:hover{ 
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    place-content: center;
+    gap: 5rem;
+}
+
+.card1{
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    height: 20rem;
+    width: 18rem; 
+    background-color: rgb(243, 232, 234);
+    box-shadow:  rgba(0, 0, 0, 0.50) 0px 1px 5px;  
+}
+.card1:hover{
+    background-color: white;
+}
+.card2{
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    height: 20rem;
+    width: 18rem; 
+    background-color: rgb(243, 232, 234);
+    box-shadow:  rgba(0, 0, 0, 0.50) 0px 1px 5px;  
+}
+.card2:hover{
+    background-color: white;
+}
+
+.card3{
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    height: 20rem;
+    width: 18rem; 
+    background-color: rgb(243, 232, 234);
+    box-shadow:  rgba(0, 0, 0, 0.50) 0px 1px 5px;  
+}
+.card3:hover{
+    background-color: white;
+}
+.image{
+    height: 12rem;
+    width: 8rem;
+}
+.image:hover{
+    height: 12.1rem;
+    width: 8.1rem;
+}
+.a{
+    position: relative;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: .2rem;
+    color: black;
+    background-color: rgb(231, 217, 217);
+    padding: .6rem;
+    margin: auto;
+}
+.a:hover{ 
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(29, 31, 68);
+    color: white;
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: rgba(10, 0.5, 10, 0.50) 0px 0px 8px;
+    font-size: .8rem;
+    padding: 2rem;
+    font-weight: 100;
+}
+.footer2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+    box-shadow: white 1px 1px 5px;
+    padding: .6rem;
+    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+}
+h4{
+    color: rgb(145, 136, 136);
+    font-weight: 100;    
+}
+.aa{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+@media screen and (max-width: 768px){
+    .nav1{
+        display: block;
+    }
+    .pages{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav1{
+        display: block;
+    }
+    .pages{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

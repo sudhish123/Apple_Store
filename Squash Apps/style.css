@@ -1,0 +1,237 @@
+.body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    position: sticky;
+    top: .1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0;
+    background-color: rgb(241, 235, 235);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.smart {
+    margin: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav1 {
+    /* padding-left: 0;
+    margin-left: 0; */
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.head {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: .4rem;
+}
+
+.user {
+    display: flex;
+}
+
+.menu {
+    margin-top: .6rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    display: none;
+}
+
+.pages {
+    display: flex;
+}
+/* .pages > img {
+    margin-top: .2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50px;
+} */
+
+.page {
+    display: flex;
+    color: black;
+    margin-right: 2vw;
+    padding: .8rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+}
+
+.maincard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: auto;
+}
+
+
+.Card1,
+.Card2,
+.Card3,
+.Card4 {
+    border-radius: 10px;
+    padding-left: 2.5rem;
+    padding-top: .8rem;
+    padding-bottom: .6rem;
+    padding-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    background-color: rgb(236, 239, 226);
+    box-shadow: rgba(0, 0, 0, 0.80) 0px 1px 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Card1:hover,
+.Card2:hover,
+.Card3:hover,
+.Card4:hover {
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 1px 15px;
+    background-color: white;
+
+}
+
+.rating {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+button {
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(82, 79, 255);
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: .3rem;
+    margin-bottom: 10px;
+}
+
+button img {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(2, 143, 2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.image {
+    height: 12rem;
+    width: 10rem;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-top: 2px;
+    border-radius: 8vh;
+}
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(29, 31, 68);
+    color: white;
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: rgba(10, 0.5, 10, 0.50) 0px 0px 8px;
+    font-size: .8rem;
+    padding: 2rem;
+    font-weight: 100;
+}
+.footer2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    place-items: center;
+    box-shadow: white 1px 1px 5px;
+    padding: .6rem;
+    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+}
+h4{
+    color: rgb(145, 136, 136);
+    font-weight: 100;    
+}
+.aa{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav1 {
+        display: block;
+    }
+
+    .pages {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav1 {
+        display: block;
+    }
+
+    .pages {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}

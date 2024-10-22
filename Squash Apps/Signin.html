@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Apple</title>
+  <link rel="icon" type="image" href="./Imagess/applilogo.jpeg">
+  <link rel="stylesheet" href="./Signin.css">
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="nav">
+      <div class="user">
+        <img class="logo" src="./Imagess/applilogo.jpeg">
+        <div class="head">APPLE STORE</div>
+      </div>
+      <div>
+        <img onclick="Openmenu()" class="menu" src="./Imagess/menu.png">
+      </div>
+      <div class="pages">
+        <a class="page" href="./task1.html">Mobile</a>
+        <a class="page" href="./Accessories.html">Accessories</a>
+        <a class="page" href="./Contact.html">Contact Us</a>
+        <a class="page" href="./Signin.html">Sing-In</a>
+      </div>
+    </div>
+    <div class="nav1" id="nav1">
+      <a class="page" href="./task1.html">Mobile</a>
+      <a class="page" href="./Accessories.html">Accessories</a>
+      <a class="page" href="./Contact.html">Contact Us</a>
+      <a class="page" href="./Signin.html">Sing-In</a>
+    </div>
+    <div class="login-container">
+      <div class="use">
+        <img class="userimg" src="./Imagess/user.jpeg">
+        <h3>Login</h3>
+      </div>
+      <div>
+        <label>E-Mail Id</label>
+        <input type="email" id="email" oninput="validation(this)" class="email" name="email"
+          placeholder="Enter your E-Mail ID" required>
+        <div id="emailError" class="error"></div>
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" id="password" class="email" name="password" placeholder="Enter Your Password" required>
+        <div id="passwordError" class="error"></div>
+      </div>
+      <div>
+        <button onclick="Submit()" type="submit">Login</button>
+      </div>
+      <div>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer1">
+        <div class="about">
+          <h4>About</h4>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Corporate Information</p>
+        </div>
+        <hr>
+        <div class="help">
+          <h4>Help</h4>
+          <p>Payments</p>
+          <p>Shipping</p>
+          <p>Cancellation</p>
+          <p>Report Infringement</p>
+        </div>
+        <hr>
+        <div class="policy">
+          <h4>Policy</h4>
+          <p>Terms Of Use</p>
+          <p>Security</p>
+          <p>Privacy</p>
+          <p>Sitemap</p>
+        </div>
+        <hr>
+        <div class="address">
+          <h4>Regd Address</h4>
+          <p>1 Apple Park Way,</p>
+          <p>Cupertino, </p>
+          <p>California,</p>
+          <p>United States.</p>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="aa">
+          <img src="./Imagess/ad.svg">Advertise
+        </div>
+        <div class="aa">
+          <img src="./Imagess/help.svg">Help Center
+        </div>
+        <div class="aa">
+          <img src="./Imagess/gift.svg">Gift Cards
+        </div>
+        <div>
+          <p>&copy; 2024 Apple Store. All rights reserved.</p>
+        </div>
+        <div class="aa">
+          <img src="./Imagess/f1.svg">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function Openmenu() {
+      menu = document.getElementById("nav1");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      }
+      else {
+        menu.style.display = "block";
+      }
+    }
+    function Submit() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      const emailError = document.getElementById("emailError");
+      const passwordError = document.getElementById("passwordError");
+
+      if (email === "") {
+        emailError.textContent = "E-Mail ID Is Required*."
+      }
+      else if (email) {
+        const mailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        mail = mailRegex.test(email);
+        if (!mail) {
+          emailError.textContent = "Please Enter Valid E-mail ID"
+        }
+      }
+
+      if (password === "") {
+        passwordError.textContent = "Password Is Required*."
+      }
+      if (email === "apple@gmail.com" && password === "12345678") {
+        alert("SuccessFully Logged In")
+        window.location.href = "./task1.html"
+      }
+      else {
+        alert("Wrong Email Or Password")
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+
+
+
+.banner img{
+  height: 20rem;
+  width: 20rem;
+}
+.banner img:hover{
+  height: 21rem;
+  width: 21rem;
+}
+
+.banner{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  justify-content: space-around;
+}
+
+.images{
+    display: flex;
+    margin: 5rem auto;
+    padding: 5rem auto;
+}
+.aa{
+    height: 15rem;
+    width: 15rem;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  
